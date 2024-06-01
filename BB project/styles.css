@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li img {
+    margin-right: 10px;
+}
+
+.sidebar .active {
+    font-weight: bold;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+}
+
+.join-discord {
+    margin-bottom: 20px;
+}
+
+.join-discord h3 {
+    margin-bottom: 10px;
+}
+
+.join-discord button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7289da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+}
+
+.settings img {
+    margin-right: 10px;
+}
+
+.main-content {
+    width: 50%;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin-right: 10px;
+}
+
+.header .free {
+    color: pink;
+    font-size: 14px;
+}
+
+.header input {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.course-image h2 {
+    margin-bottom: 10px;
+}
+
+.course-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tabs div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.description,
+.skills,
+.requirements,
+.syllabus,
+.teacher,
+.reviews {
+    margin-bottom: 20px;
+}
+
+.skills ul,
+.requirements ul,
+.syllabus ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills ul li,
+.requirements ul li,
+.syllabus ul li {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.teacher-info {
+    display: flex;
+    background: linear-gradient(to bottom, white, #f0f0f0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.teacher-info img {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.teacher-info h4 {
+    margin-bottom: 5px;
+}
+
+.teacher-info .subtitle,
+.teacher-info ul li {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.teacher-info p {
+    margin-bottom: 10px;
+}
+
+.teacher-info ul {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.teacher-info ul li {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-info ul li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.social-links img {
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+}
+
+.reviews .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.rating-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.reviews .rating h4 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.reviews .rating p {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.reviews .stars {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.reviews .stars .star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.reviews .stars .star span {
+    flex: 0 0 50px;
+}
+
+.reviews .stars .bar {
+    background: lightgray;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.reviews .stars .fill {
+    background: gold;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.payment-section {
+    width: 25%;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f8f9fa;
+}
+
+.payment-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h2 {
+    margin-bottom: 20px;
+}
+
+.payment-section ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.payment-section ul li {
+    margin-bottom: 10px;
+}
+
+.payment-section .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-section .original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.payment-section .discounted-price {
+    color: red;
+    font-size: 1.2em;
+}
+
+.payment-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-section .pro-members {
+    background-color: blueviolet;
+}
+
+.payment-section .secure-payment img {
+    margin-right: 10px;
+}
+
+.payment-section p {
+    margin-top: 20px;
+}
